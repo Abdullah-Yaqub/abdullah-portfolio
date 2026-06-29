@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Initialize AOS
+    // 1. تهيئة الأنيميشن (AOS)
     AOS.init({
         duration: 800,
         once: true,
         offset: 100,
     });
 
-    // 2. Typing Effect Logic
+    // 2. تأثير الكتابة التلقائية (Typing Effect)
     const texts = ["مطور واجهات متكاملة", "مهندس أنظمة Full-Stack"];
     let count = 0;
     let index = 0;
@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (!isDeleting && letter.length === currentText.length) {
-            typeSpeed = 2000; // Pause at end of word
+            typeSpeed = 2000; // توقف مؤقت بعد اكتمال الكلمة
             isDeleting = true;
         } else if (isDeleting && letter.length === 0) {
             isDeleting = false;
             count++;
-            typeSpeed = 500; // Pause before new word
+            typeSpeed = 500; // توقف قبل كتابة الكلمة الجديدة
         }
 
         setTimeout(type, typeSpeed);
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         type();
     }
 
-    // 3. Custom Cursor Logic
+    // 3. الماوس المخصص (Custom Cursor Logic)
     const cursor = document.getElementById('custom-cursor');
     if (cursor) {
         document.addEventListener('mousemove', (e) => {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cursor.style.top = e.clientY + 'px';
         });
 
-        // Add hover effect to interactive elements
+        // إضافة تأثير التكبير للماوس عند تمريره على الروابط والأزرار
         const hoverables = document.querySelectorAll('a, button');
         hoverables.forEach(el => {
             el.addEventListener('mouseenter', () => cursor.classList.add('hover'));

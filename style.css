@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
 
 :root {
-    /* الثيم الليلي الفخم (ثابت) */
-    --bg-color: #0f172a; /* slate-900 */
-    --text-color: #f8fafc; /* slate-50 */
-    --glass-bg: rgba(30, 41, 59, 0.4);
-    --glass-border: rgba(255, 255, 255, 0.05);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    --cursor-color: #a3e635; /* lime-400 */
+    --bg-color: #0f172a; 
+    --text-color: #f8fafc; 
+    
+    /* زجاج داكن مع حدود خضراء خفيفة */
+    --glass-bg: rgba(30, 41, 59, 0.4); 
+    --glass-border: rgba(163, 230, 53, 0.1); 
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    
+    --cursor-color: #a3e635; /* الماوس الأخضر */
     --scrollbar-bg: #0f172a;
-    --scrollbar-thumb: #334155;
+    --scrollbar-thumb: #1e293b;
 }
 
 * {
     font-family: 'Tajawal', sans-serif;
-    cursor: none; /* إخفاء الماوس العادي */
+    cursor: none;
 }
 
 body {
@@ -24,7 +26,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Glassmorphism Panel */
 .glass-panel {
     background: var(--glass-bg);
     backdrop-filter: blur(16px);
@@ -33,43 +34,29 @@ body {
     box-shadow: var(--glass-shadow);
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: var(--scrollbar-bg);
-}
-::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb);
-    border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--cursor-color);
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--cursor-color); }
 
-/* Custom Cursor */
+/* الماوس المخصص */
 .custom-cursor {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 12px;
-    height: 12px;
+    top: 0; left: 0;
+    width: 12px; height: 12px;
     background-color: var(--cursor-color);
     border-radius: 50%;
-    pointer-events: none !important; /* مهم عشان تقدر تضغط الأزرار */
-    z-index: 9999 !important; /* عشان ما يختفي ورا الصور */
+    pointer-events: none !important;
+    z-index: 9999 !important;
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 0 10px var(--cursor-color), 0 0 20px var(--cursor-color);
-    mix-blend-mode: difference;
+    box-shadow: 0 0 15px rgba(163, 230, 53, 0.6);
+    mix-blend-mode: screen;
 }
 
 .custom-cursor.hover {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(163, 230, 53, 0.2); 
+    width: 40px; height: 40px;
+    background-color: rgba(163, 230, 53, 0.1); 
     border: 2px solid var(--cursor-color);
-    box-shadow: 0 0 15px var(--cursor-color);
-    mix-blend-mode: normal;
+    box-shadow: 0 0 20px rgba(163, 230, 53, 0.4);
 }

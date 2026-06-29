@@ -19,10 +19,11 @@
 
     <nav class="fixed w-full z-50 glass-panel border-b border-slate-800/50 py-4 px-6 md:px-12 transition-all">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="#" class="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-                <span class="w-8 h-8 rounded-lg bg-lime-400 flex items-center justify-center text-slate-900 text-xl">ع</span>
-                عبدالله<span class="text-lime-400">.</span>
+            <!-- تم دمج اللوقو الجديد هنا -->
+            <a href="#" class="flex items-center gap-2">
+                <img src="logo.png" alt="Abdullah Yaqub Logo" class="h-10 w-auto object-contain">
             </a>
+            
             <div class="hidden md:flex gap-8 items-center text-slate-300 font-medium">
                 <a href="#hero" class="hover:text-lime-400 transition-colors">الرئيسية</a>
                 <a href="#skills" class="hover:text-lime-400 transition-colors">المهارات</a>
@@ -141,7 +142,42 @@
             </div>
 
             <div class="space-y-32">
+                
+                <!-- المشروع الجديد: موقع التصوير الفوتوغرافي -->
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div class="w-full lg:w-1/2 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-lime-400/30 text-sm font-bold text-lime-400 bg-lime-400/10">
+                            <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+                            تصميم وتطوير ويب (Front-End)
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black text-white">معرض أعمال <span class="text-lime-400">التصوير الفوتوغرافي</span></h3>
+                        <div class="text-slate-400 text-lg md:text-xl leading-relaxed space-y-4">
+                            <p><strong class="text-white">🔴 المشكلة:</strong> الحاجة لمنصة رقمية احترافية وسريعة لعرض أعمال التصوير بدقة عالية وتجربة مستخدم بصرية جذابة.</p>
+                            <p><strong class="text-white">💡 الحل:</strong> تصميم وتطوير معرض أعمال (Portfolio) تفاعلي يركز على إبراز جودة الصور وسلاسة التصفح، باستخدام أحدث تقنيات الويب.</p>
+                            <p><strong class="text-white">🚀 النتيجة:</strong> منصة عصرية تعكس الهوية الفنية للمصور، وتسهل على العملاء استعراض الأعمال السابقة والتواصل بشكل مباشر.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-3 pt-4">
+                            <span class="px-4 py-2 glass-panel rounded-lg text-sm font-medium text-slate-300 border border-slate-700/50">HTML/CSS</span>
+                            <span class="px-4 py-2 glass-panel rounded-lg text-sm font-medium text-slate-300 border border-slate-700/50">JavaScript</span>
+                        </div>
+                        <div class="pt-4 flex gap-4">
+                            <a href="https://abdullah-yaqub.github.io/abdullah-photo-portfolio/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-lime-400 hover:bg-lime-500 text-slate-900 font-bold rounded-xl transition-all shadow-[0_0_15px_rgba(163,230,53,0.3)] hover:-translate-y-1">
+                                زيارة الموقع
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 group">
+                        <div class="rounded-3xl overflow-hidden glass-panel border border-slate-700/50 p-2 shadow-2xl relative transition-all duration-500 hover:border-lime-400/50">
+                            <div class="rounded-2xl overflow-hidden relative bg-slate-900 border border-slate-800">
+                                <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80" alt="معرض التصوير" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المشاريع القديمة (رتبنا اتجاهاتها عشان تحافظ على الشكل الجمالي) -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
                     <div class="w-full lg:w-1/2 space-y-6">
                         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-indigo-500/30 text-sm font-bold text-indigo-400 bg-indigo-500/10">
                             <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
@@ -173,7 +209,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     <div class="w-full lg:w-1/2 space-y-6">
                         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-lime-400/30 text-sm font-bold text-lime-400 bg-lime-400/10">
                             <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
@@ -201,7 +237,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
                     <div class="w-full lg:w-1/2 space-y-6">
                         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-blue-500/30 text-sm font-bold text-blue-400 bg-blue-500/10">
                             <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
@@ -229,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     <div class="w-full lg:w-1/2 space-y-6">
                         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-purple-500/30 text-sm font-bold text-purple-400 bg-purple-500/10">
                             <span class="w-2 h-2 rounded-full bg-purple-500"></span>
